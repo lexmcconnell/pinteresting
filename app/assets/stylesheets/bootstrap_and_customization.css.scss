@@ -1,11 +1,23 @@
 
-$body-bg: #9b59b6; 
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500);
 
-$navbar-default-bg: #8e44ad;
-$navbar-default-link-color: #ffffff;
+$font-family-sans-serif: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-$jumbotron-bg: #ecf0f1;
+
+$body-bg: #bdc3d0;
+$brand-primary: #c0392b; 
+
+$navbar-default-bg: #f8f8f8;
+$navbar-default-brand-color: #c0392b;
+$navbar-default-link-color: #333333;
+
+$jumbotron-bg: #f8f8f8;
 
 $border-radius-base: 0px;
 
 @import 'bootstrap';
+
+.center {
+	text-align: center;
+}
+
