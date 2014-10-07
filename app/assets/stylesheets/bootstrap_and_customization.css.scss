@@ -4,11 +4,11 @@
 $font-family-sans-serif: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 
-$body-bg: #bdc3d0;
-$brand-primary: #c0392b; 
+$body-bg: #29264d;
+$brand-primary: #29264d; 
 
 $navbar-default-bg: #f8f8f8;
-$navbar-default-brand-color: #c0392b;
+$navbar-default-brand-color: #29264d;
 $navbar-default-link-color: #333333;
 
 $jumbotron-bg: #f8f8f8;
@@ -23,4 +23,8 @@ $border-radius-base: 0px;
 
 .navbar-brand {
 	font-weight: medium;
+}
+
+.textcolorwhite {
+	color: #f8f8f8
 }
