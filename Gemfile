@@ -12,6 +12,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'bootstrap-sass'
 gem 'devise', '~> 3.4.0'
+gem 'aws-sdk', '~> 1.55.0'
 gem 'paperclip', github: 'thoughtbot/paperclip'
 
 
@@ -22,5 +23,5 @@ end
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
-	gem 'aws-sdk', '~> 1.55.0'
+
 end
