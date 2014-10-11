@@ -1,14 +1,14 @@
+<%= image_tag @pin.image.url :medium%>
+
 <div class='textcolorwhite'>
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @pin.description %>
-</p>
+		<p>
+		  <%= @pin.description %>
+		</p>
 
-<% if @pin.user == current_user %>
-	<%= link_to 'Edit', edit_pin_path(@pin), class: 'textcolorwhite' %> |
-<% end %>
-<%= link_to 'Back', pins_path, class: 'textcolorwhite' %>
+		<% if @pin.user == current_user %>
+			<%= link_to 'Edit', edit_pin_path(@pin), class: 'textcolorwhite' %> |
+		<% end %>
+		<%= link_to 'Back', pins_path, class: 'textcolorwhite' %>
 
 </div>
