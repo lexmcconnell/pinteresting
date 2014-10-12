@@ -8,7 +8,7 @@
               <div class="panel-body">
                 <strong> <%= link_to pin.description, pin %> </strong>
                 <p> <%= pin.user.name if pin.user %> </p>
-                <% if pin.user == current_user %>
+                <% if current_user && pin.user == current_user %>
                 <p><%= link_to edit_pin_path(pin), class: 'redtext' do %>
                 <span class='glyphicon glyphicon-pencil'></span> Edit
                 <% end %>
