@@ -15,6 +15,8 @@ $jumbotron-bg: #f8f8f8;
 
 $border-radius-base: 0px;
 
+$icon-font-path: 'bootstrap/';
+
 @import 'bootstrap';
 
 .center {
@@ -36,4 +38,13 @@ $border-radius-base: 0px;
 .btn-xs.navbar-btn {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.nav-center {
+    margin:0;
+    float:none;
+}
+
+.navbar-inner{
+    text-align:center;
 }
