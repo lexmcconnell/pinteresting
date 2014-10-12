@@ -89,4 +89,6 @@ Rails.application.configure do
         :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
       }
     }
+    # Fix Glyphicons not showing up in Heroku
+    config.assets.compile = true
 end
