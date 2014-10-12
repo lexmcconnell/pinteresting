@@ -1,17 +1,18 @@
-<%= link_to '<< Go Back', pins_path, class: 'redtext' %>
+<%= link_to '< Back', pins_path, class: 'btn btn-default btn-sm redtext' %>
 <br/>
 <br/>
 <div id="pins">
+
+
 
 <div class="boxbig panel panel-default">
 
 	<%= image_tag @pin.image.url %>
 
-	<div class="panel-body"
+	<div class="panel-body">
 
-		<p>
-		  <strong><%= @pin.description %></strong>
-		</p>
+		<p><strong><%= @pin.description %></strong></p>
+		<p> <%= @pin.user.name if @pin.user %> </p>
 
 		<% if @pin.user == current_user %>
 			<%= link_to 'Edit', edit_pin_path(@pin), class: 'redtext' %> 
